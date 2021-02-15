@@ -30,7 +30,7 @@ Our results can tell us the most common accessibility violations found by automa
 Note: In aggregating this list, we excluded "minor" violations, such as “id attribute value must be unique”. We also combined the violation “Document must have one main landmark” with “All page content must be contained by landmarks” and the violation “Form elements must have labels” with “Select element must have an accessible name".
 
 # Data
-The file **a11ymoz.csv** contains a dataset detailing number of accessibility rules passed, violated, inapplicable and incomplete-tests per page (18,704 observations) 
+The file **pages.csv** contains the results for each of the 18,704 web pages tested, detailing the number of accessibility rules passed, violated, inapplicable and incomplete-tests per page.
 
 # Data dictionary
 *list of each column name and its description to come*
