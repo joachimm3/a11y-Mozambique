@@ -1,7 +1,7 @@
 # a11y.co.mz
  
 # Overview
-In December 2020, the Mozambican Disabled Person’s Organisation Forum (FAMOD) teamed up with UK-based non-profit Data4Change to run automated accessibility testing on 90 of the most important and useful websites in Mozambique. 
+In December 2020, the Mozambican Disabled Person’s Organisation Forum (FAMOD) teamed up with UK-based non-profit Data4Change to carry out a data-driven investigation into the level of web accessibility across 90 key websites in Mozambique, ranging from online shopping to news sites, job sites and government information and services. More information about the investigation and the barriers faced by people with disabilities online can be found on www.a11y.co.mz.
 
 # Methodology
 We used the axe-core library API to carry out automated accessibility testing on 18,704 web pages across 90 Mozambican websites, according to WCAG guidelines. 
@@ -32,13 +32,20 @@ The top five major accessibility violations were as follows (and account for nea
 Note: In aggregating this list, we excluded "minor" violations, such as “id attribute value must be unique”. We also included the violation “Document must have one main landmark” under “All page content must be contained by landmarks” and the violation “Form elements must have labels” under “Select element must have an accessible name".
 
 # Data
-The data folder contains the following two csv files:
-- **pages.csv** Dataset showing the number of accessibility rules passed, violated, inapplicable and incomplete-tests per page (18,704 observations) 
-- **violations.csv** Dataset detailing the count of each type of accessibility violation per page (128,377 observations)
+The file **pages.csv** contains the number of accessibility rules passed, violated, inapplicable and incomplete-tests per page (18,704 observations) 
 
 # Data dictionary
-## Page stats analysis
 *list of each column name and its description to come*
 
-## Violations analysis
-*list of each column name and its description to come*
+# About
+## About a11y.co.mz
+“A11y” is a common abbreviation for “accessibility”. The “11” represents the number of letters between the “a” and “y” in the word “accessibility”. a11y.co.mz was designed and developed by Amílcar Carlos Paco (IT Manager and Data Engineer at FAMOD) and Data4Change. FAMOD is among 13 civil society organisations who were successful in applying for the African Digital Rights Fund run by CIPESA (Collaboration on International ICT Policy in East and Southern Africa). The African Digital Rights Fund included the opportunity to receive data skills training and work on data-driven projects with Data4Change.
+
+## About FAMOD
+FAMOD is an umbrella organisation for civil society organisations working to support people with disabilities in Mozambique. FAMOD was founded in 2003 and works to support, coordinate and represent the interests of their member organisations, as well as to promote the human rights and wellbeing of people with disabilities in Mozambique. FAMOD is currently working to ensure that people with disabilities, including women and children, are not left behind in Covid-19 response and recovery plans. Visit famod.org for more information.
+
+## About Data4Change
+Data4Change is a UK-based non-profit, they create data-driven projects aimed at solving some of the world’s most pressing social and political challenges. Visit data4chan.ge for more information.
+
+## About CIPESA
+This project was carried out in the context of the Africa Digital Rights Fund with support from the Collaboration on International ICT Policy for East and Southern Africa (CIPESA). Since inception, CIPESA has positioned itself as a leading centre for research and analysis of information aimed to enable policy makers in the region to understand ICT policy issues, and for various multi-stakeholders to use ICT to improve livelihoods. Visit cipesa.org for more information.
