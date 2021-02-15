@@ -1,4 +1,4 @@
-# a11y.co.mz – Acessibilidade da web em Moçambique
+# a11y.co.mz – Acessibilidade da web em Moçambique.
  
 # Visão geral
 Em dezembro de 2020, o Fórum das Associações Moçambicanas de Pessoas com Deficiência (FAMOD) juntou-se à organização sem fins lucrativos Data4Change, sediada no Reino Unido, para realizar uma investigação baseada em dados sobre a acessibilidade na web de 90 sites importantes de Moçambique. Os sites foram seleccionados pelo FAMOD e variaram de compras online à sites de notícias, sites de emprego e serviços governamentais, bem como do sector privado. Mais informações sobre a investigação e as barreiras enfrentadas, online,  por pessoas com deficiência podem ser encontradas no site do projecto, www.a11y.co.mz.
