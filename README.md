@@ -33,7 +33,24 @@ Note: In aggregating this list, we excluded "minor" violations, such as “id at
 The file **pages.csv** contains the results for each of the 18,704 web pages tested, detailing the number of accessibility rules passed, violated, inapplicable and incomplete-tests per page.
 
 # Data dictionary
-*list of each column name and its description to come*
+
+|Variable          |Description                                                                                                                                                               |
+|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|website_id        |ID number of each website domain                                                                                                                                          |
+|website_name      |Website domain name                                                                                                                                                       |
+|website_url       |Website domain URL                                                                                                                                                        |
+|website_category1 |Website Category , whether private or public.                                                                                                                             |
+|website_category2 |Functional category of website domain (eg news, shopping, academic.)                                                                                                      |
+|webpage_id        |Page ID generated from MD5 hash of page URL.                                                                                                                              |
+|webpage_url       |The URL of the tested page.                                                                                                                                               |
+|page_depth        |Link depth of the page from initial website URL                                                                                                                           |
+|test_timestamp    |Time when the test was completed. https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#timestamp                                                                 |
+|passes_count      |Number of accessibility test rules passed.                                                                                                                                |
+|violations_count  |Number of accessibility test rules violated.                                                                                                                              |
+|inapplicable_count|Number of accessibility test rules that were inapplicable for the page.                                                                                                   |
+|incomplete_count  |Number of accessibility tests that were aborted. This can happen either because of technical limitation to what the rule can test, or because a JavaScript error occurred.|
+
+
 
 # About
 ## About a11y.co.mz
