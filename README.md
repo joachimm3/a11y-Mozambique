@@ -1,66 +1,66 @@
-# a11y.co.mz – Web accessibility in Mozambique
+# a11y.co.mz – Acessibilidade da web em Moçambique.
  
-# Overview
-In December 2020, the Mozambican Disabled Person’s Organisation Forum (FAMOD) teamed up with UK-based non-profit Data4Change to carry out a data-driven investigation into the web accessibility of 90 key websites in Mozambique. Websites were selected by FAMOD and ranged from online shopping to news sites, job sites and government information and services. More information about the investigation and the barriers faced by people with disabilities online can be found on project website, www.a11y.co.mz.
+# Visão geral
+Em dezembro de 2020, o Fórum das Associações Moçambicanas de Pessoas com Deficiência (FAMOD) juntou-se à organização sem fins lucrativos Data4Change, sediada no Reino Unido, para realizar uma investigação baseada em dados sobre a acessibilidade na web de 90 sites importantes de Moçambique. Os sites foram seleccionados pelo FAMOD e variaram de compras online à sites de notícias, sites de emprego e serviços governamentais, bem como do sector privado. Mais informações sobre a investigação e as barreiras enfrentadas, online,  por pessoas com deficiência podem ser encontradas no site do projecto, www.a11y.co.mz.
 
-# Methodology
-We used the axe-core library API (https://github.com/dequelabs/axe-core) to carry out automated accessibility testing on 18,704 web pages across 90 Mozambican websites, according to WCAG guidelines. 
+# Metodologia
+Usamos a API da biblioteca ax-core (https://github.com/dequelabs/axe-core) para realizar testes automatizados de acessibilidade em 18.704 páginas da web em 90 sites moçambicanos, de acordo com as diretrizes WCAG.
 
-For each of the websites, internal links (up to level-2 internal links) were assessed using axe-core. Here “up to level-2 internal links” means; including 102 initially specified links (level-0 links), links found on 102 pages initially specified (level-1 links) and links found on level-1 pages (level-2 links).
+Para cada um dos sites, links internos (até links internos de nível 2) foram avaliados usando ax-core. Aqui, “links internos de até nível 2” significa; incluindo 102 links especificados inicialmente (links de nível 0), links encontrados em 102 páginas especificadas inicialmente (links de nível 1) e links encontrados em páginas de nível 1 (links de nível 2).
 
-We supplemented this automated testing with a day of manual testing on a small selection of the websites. This further confirmed the significant barriers faced by screen reader and colour blind internet users.
+Complementamos o teste automatizado com um dia de teste manual em uma pequena selecção de sites. Isso confirmou ainda mais as barreiras significativas enfrentadas pelos leitores de tela e usuários daltônicos da Internet.
 
-# Results
-The automated testing captured 722,053 instances of accessibility ‘violations’. Each violation represents a barrier preventing someone with a visual, hearing, physical or cognitive impairment from fully engaging with the web page.
+# Resultados
+O teste automatizado capturou 722.053 instâncias de 'violações' de acessibilidade. Cada violação representa uma barreira que impede alguém com deficiência visual, auditiva, física ou cognitiva de se engajar totalmente com a página da web.
 
-- Total number of websites assessed: 90
-- Total number of web pages assessed: 18,704
-- Total number of violations found: 722,053
+- Número total de sites avaliados: 90
+- Número total de páginas avaliadas: 18.704
+- Número total de violações encontradas: 722.053
 
-# Analysis
-We deliberately made the decision not to score, rate or compare websites against one another since automated testing can only test some accessibility errors and we therefore cannot fairly compare websites. (For example, if the only errors a website had were 100 images with no alt attributes a tool could find all of those and therefore 100% of the issues. However, if a website had an issue relating to focus order, a tool couldn’t find this issue and would get 0% of issues.)
+# Análise
+Tomamos a decisão deliberada de não pontuar, avaliar ou comparar sites entre si, uma vez que o teste automatizado só pode testar alguns erros de acessibilidade e, portanto, não podemos comparar sites de maneira justa. (Por exemplo, se os únicos erros de um site fossem 100 imagens sem textos alternativos, uma ferramenta poderia encontrar todos eles e, portanto, 100% dos problemas. No entanto, se um site tivesse um problema relacionado à ordem de foco, uma ferramenta poderia não encontrar este problema e obteria 0% dos problemas.)
 
-Our results can tell us the most common accessibility violations found by automated testing. The top five major accessibility violations were as follows (and account for nearly 90% of all the accessibility violations on the web pages that we tested):
-- 37% of violations: Elements have insufficient colour contrast
-- 33%: Not all page content is contained by landmarks
-- 11%: Links do not have discernible text
-- 3%: Select elements do not have accessible names
-- 2%: Images do not have alternate text
+Nossos resultados podem nos dizer as violações de acessibilidade mais comuns encontradas por testes automatizados. As cinco principais violações de acessibilidade foram as seguintes (e representam quase 90% de todas as violações de acessibilidade nas páginas da web que testamos):
+- 37% das violações: os elementos têm contraste de cor insuficiente
+- 33%: Nem todo o conteúdo da página é composto por pontos de referência (*landmarks*)
+- 11%: Os links não têm texto discernível
+- 3%: Os elementos de Selecção não têm nomes acessíveis
+- 2%: As imagens não possuem texto alternativo
 
-Note: In aggregating this list, we excluded "minor" violations, such as “id attribute value must be unique”. We also combined the violation “Document must have one main landmark” with “All page content must be contained by landmarks” and the violation “Form elements must have labels” with “Select element must have an accessible name".
+Observação: Ao agregar esta lista, excluímos violações "menores", como “o valor do atributo id deve ser único”. Também combinamos a violação “O documento deve ter um ponto de referência principal” com “Todo o conteúdo da página deve estar contido em pontos de referência” e a violação “Os elementos do formulário devem ter rótulos” com “O elemento de Selecção deve ter um nome acessível".
 
-# Data
-The file **pages.csv** contains the results for each of the 18,704 web pages tested, detailing the number of accessibility rules passed, violated, inapplicable and incomplete-tests per page.
+# Dados
+O arquivo **pages.csv** contém os resultados de cada uma das 18.704 páginas testadas, detalhando o número de regras de acessibilidade aprovadas, violadas, inaplicáveis ​​e incompletas por página.
 
-# Data dictionary
+# Dicionário de dados
 
-|Variable          |Description                                                                                                                                                               |
+|Variável          |Descrição                                                                                                                                                               |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|website_id        |ID number of each website domain                                                                                                                                          |
-|website_name      |Website domain name                                                                                                                                                       |
-|website_url       |Website domain URL                                                                                                                                                        |
-|website_category1 |Website Category , whether private or public.                                                                                                                             |
-|website_category2 |Functional category of website domain (eg news, shopping, academic.)                                                                                                      |
-|webpage_id        |Page ID generated from MD5 hash of page URL.                                                                                                                              |
-|webpage_url       |The URL of the tested page.                                                                                                                                               |
-|page_depth        |Link depth of the page from initial website URL                                                                                                                           |
-|test_timestamp    |Time when the test was completed. https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#timestamp                                                                 |
-|passes_count      |Number of accessibility test rules passed.                                                                                                                                |
-|violations_count  |Number of accessibility test rules violated.                                                                                                                              |
-|inapplicable_count|Number of accessibility test rules that were inapplicable for the page.                                                                                                   |
-|incomplete_count  |Number of accessibility tests that were aborted. This can happen either because of technical limitation to what the rule can test, or because a JavaScript error occurred.|
+|website_id        |ID de cada domínio de site                                                                                                                                         |
+|website_name      |Nome de domínio do site                                                                                                                                                      |
+|website_url       |URL do site                                                                                                                                                        |
+|website_category1 |Categoria do site, seja privado ou público.                                                                                                                             |
+|website_category2 |Categoria do domínio do site (por exemplo, notícias, compras, acadêmico.)                                                                                                      |
+|webpage_id        |ID da página gerado a partir do hash MD5 do URL da página.                                                                                                        |
+|webpage_url       |A URL da página testada.                                                                                                                                               |
+|page_depth        |Profundidade do link da página a partir da URL inicial do site                                                                                                                           |
+|test_timestamp    |A hora em que o teste foi concluído. https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#timestamp                                                                 |
+|passes_count      |Número de regras de teste de acessibilidade aprovadas.                                                                                                                                |
+|violations_count  |Número de regras de teste de acessibilidade violadas.                                                                                                                              |
+|inapplicable_count|Número de regras de teste de acessibilidade que não eram aplicáveis ​​para a página.                                                                                                   |
+|incomplete_count  |Número de testes de acessibilidade que foram abortados. Isso pode acontecer devido à limitação técnica do que a regra pode testar ou porque ocorreu um erro de JavaScript.|
 
 
 
-# About
-## About a11y.co.mz
-“A11y” is a common abbreviation for “accessibility”. The “11” represents the number of letters between the “a” and “y” in the word “accessibility”. a11y.co.mz was designed and developed by Amílcar Carlos Paco (IT Manager and Data Engineer at FAMOD) and Data4Change. FAMOD is among 13 civil society organisations who were successful in applying for the African Digital Rights Fund run by CIPESA (Collaboration on International ICT Policy in East and Southern Africa). The African Digital Rights Fund included the opportunity to receive data skills training and work on data-driven projects with Data4Change.
+# Sobre
+## Sobre a11y.co.mz
+“A11y” é uma abreviatura comum para “*accessibility*”. O “11” representa o número de letras entre o “a” e “y” na palavra "*accessibility*". a11y.co.mz foi projectado e desenvolvido por Amílcar Carlos Paco (Gerente de TI e Engenheiro de Dados do FAMOD) e Data4Change. O FAMOD está entre as 13 organizações da sociedade civil que tiveram sucesso em se candidatar ao Fundo Africano de Direitos Digitais administrado pela CIPESA (Colaboração sobre Política Internacional de TIC na África Oriental e Austral). O Fundo Africano de Direitos Digitais incluiu a oportunidade de receber treinamento em habilidades de dados e trabalhar em projectos baseados em dados com Data4Change.
 
-## About FAMOD
-FAMOD is an umbrella organisation for civil society organisations working to support people with disabilities in Mozambique. FAMOD was founded in 2003 and works to support, coordinate and represent the interests of their member organisations, as well as to promote the human rights and wellbeing of people with disabilities in Mozambique. FAMOD is currently working to ensure that people with disabilities, including women and children, are not left behind in Covid-19 response and recovery plans. Visit www.famod.org for more information.
+## Sobre FAMOD
+FAMOD é uma organização que tem como membros as organizações da sociedade civil que trabalham no apoio às pessoas com deficiência em Moçambique. FAMOD foi fundada em 2003 e trabalha para apoiar, coordenar e representar os interesses das suas organizações membros, bem como para promover os direitos humanos e o bem-estar das pessoas com deficiência em Moçambique. FAMOD trabalha actualmente para assegurar que as pessoas com deficiência, incluindo mulheres e crianças, não sejam deixadas para trás nos planos de resposta e recuperação da Covid-19. Visite www.famod.org para mais informações.
 
-## About Data4Change
-Data4Change is a UK-based non-profit, they create data-driven projects aimed at solving some of the world’s most pressing social and political challenges. Visit www.data4chan.ge for more information.
+## Sobre Data4Change
+Data4Change é uma organização sem fins lucrativos sediada no Reino Unido. Eles criam projectos baseados em dados com o objectivo de resolver alguns dos desafios sociais e políticos mais prementes do mundo. Visite www.data4chan.ge para obter mais informações.
 
-## About CIPESA
-This project was carried out in the context of the Africa Digital Rights Fund with support from the Collaboration on International ICT Policy for East and Southern Africa (CIPESA). Since inception, CIPESA has positioned itself as a leading centre for research and analysis of information aimed to enable policy makers in the region to understand ICT policy issues, and for various multi-stakeholders to use ICT to improve livelihoods. Visit www.cipesa.org for more information.
+## Sobre CIPESA
+Este projecto foi realizado no contexto do Fundo de Direitos Digitais da África com o apoio da Colaboração sobre Política Internacional de TIC para a África Oriental e Austral (CIPESA). Desde a sua fundação, a CIPESA posicionou-se como um centro líder para pesquisa e análise de informações destinadas a permitir que os formuladores de políticas na região entendam as questões das políticas de TIC e para que várias partes interessadas usem as TIC para melhorar os meios de subsistência. Visite www.cipesa.org para mais informações.
