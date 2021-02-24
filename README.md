@@ -1,3 +1,6 @@
+[English version - Click here](https://github.com/Amilcar-Paco/a11ymoz/blob/master/README.en.md)
+
+
 # a11y.co.mz – Acessibilidade da web em Moçambique.
  
 # Visão geral
