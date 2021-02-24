@@ -33,7 +33,24 @@ Observação: Ao agregar esta lista, excluímos violações "menores", como “o
 O arquivo **pages.csv** contém os resultados de cada uma das 18.704 páginas testadas, detalhando o número de regras de acessibilidade aprovadas, violadas, inaplicáveis ​​e incompletas por página.
 
 # Dicionário de dados
-*lista de cada nome de coluna e sua descrição futura*
+
+|Variável          |Descrição                                                                                                                                                               |
+|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|website_id        |ID de cada domínio de site                                                                                                                                         |
+|website_name      |Nome de domínio do site                                                                                                                                                      |
+|website_url       |URL do site                                                                                                                                                        |
+|website_category1 |Categoria do site, seja privado ou público.                                                                                                                             |
+|website_category2 |Categoria do domínio do site (por exemplo, notícias, compras, acadêmico.)                                                                                                      |
+|webpage_id        |ID da página gerado a partir do hash MD5 do URL da página.                                                                                                        |
+|webpage_url       |A URL da página testada.                                                                                                                                               |
+|page_depth        |Profundidade do link da página a partir da URL inicial do site                                                                                                                           |
+|test_timestamp    |A hora em que o teste foi concluído. https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#timestamp                                                                 |
+|passes_count      |Número de regras de teste de acessibilidade aprovadas.                                                                                                                                |
+|violations_count  |Número de regras de teste de acessibilidade violadas.                                                                                                                              |
+|inapplicable_count|Número de regras de teste de acessibilidade que não eram aplicáveis ​​para a página.                                                                                                   |
+|incomplete_count  |Número de testes de acessibilidade que foram abortados. Isso pode acontecer devido à limitação técnica do que a regra pode testar ou porque ocorreu um erro de JavaScript.|
+
+
 
 # Sobre
 ## Sobre a11y.co.mz
