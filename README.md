@@ -1,11 +1,10 @@
 
-# a11y.co.mz – Web accessibility in Mozambique
+# a11y.co.mz/en – Web accessibility in Mozambique
  
 # Overview
-In December 2020, the Mozambican Disabled Person’s Organisation Forum (FAMOD) teamed up with UK-based non-profit Data4Change to carry out a data-driven investigation into the web accessibility of 90 key websites in Mozambique. Websites were selected by FAMOD and ranged from online shopping to news sites, job sites and government information and services. More information about the investigation and the barriers faced by people with disabilities online can be found on project website, www.a11y.co.mz.
-
+In December 2020, the Mozambican Disabled Person’s Organisation Forum (FAMOD) teamed up with UK-based non-profit Data4Change to carry out a data-driven investigation into the web accessibility of 90 key websites in Mozambique. Websites ranged from online shopping to news sites, job sites and government information and services. In this pioneering data-driven investigation, I had the honour of working as a data analyst. in which I conducted automated accessibility testing using  Web Content Accessibility Guidelines 2.0 and 2.1 (WCAG 2.0 and 2.1) on 90 of the most significant and useful websites in Mozambique and collected a massive dataset  of 722,053 accessibility "violations," each of which represented a barrier preventing someone with a visual, hearing, or physical, or cognitive impairment from fully engaging with the website. More information about the investigation and the barriers faced by people with disabilities online can be found on project website, https://a11y.co.mz/en/  
 # Methodology
-We used the axe-core library API (https://github.com/dequelabs/axe-core) to carry out automated accessibility testing on 18,704 web pages across 90 Mozambican websites, according to WCAG guidelines. 
+I used the axe-core library API (https://github.com/dequelabs/axe-core) to carry out automated accessibility testing on 18,704 web pages across 90 Mozambican websites, according to WCAG guidelines. 
 
 For each of the websites, internal links (up to level-2 internal links) were assessed using axe-core. Here “up to level-2 internal links” means; including 102 initially specified links (level-0 links), links found on 102 pages initially specified (level-1 links) and links found on level-1 pages (level-2 links).
 
